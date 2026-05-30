@@ -145,11 +145,7 @@ This means every prediction from the reproduction run matches the original k0 pr
 
 ## 5. Environment
 
-Recommended Python version:
-
-```text
-Python 3.10+
-```
+The notebooks were developed and tested mainly in the Kaggle Notebook environment. For local execution, Python 3.10+ is recommended.
 
 Main Python packages:
 
@@ -166,13 +162,13 @@ matplotlib
 jupyter
 ```
 
-Install the main dependencies with:
+Install the main dependencies locally with:
 
 ```bash
 pip install numpy pandas scikit-learn xgboost lightgbm catboost imbalanced-learn optuna matplotlib jupyter
 ```
 
-For exact reproducibility, run the notebooks in the same environment and execution order used for the original k0 pipeline.
+For exact reproducibility, run the final k0 notebooks in the same environment and execution order used for the original k0 pipeline.
 
 ---
 
@@ -199,7 +195,6 @@ Transported
 The test set has no true `Transported` labels. The target column is not used in test-row feature engineering, imputation, encoding, or preprocessing.
 
 ---
-
 ## 7. How to Run
 
 ### Step 1: Install dependencies
